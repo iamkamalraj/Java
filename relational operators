@@ -1,0 +1,14 @@
+public class Sample {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 20;
+		System.out.println(a==b);
+	}
+}
+//op false
+// o.p is false change the value b to 10 get true
+//similarly System.out.println(a>b); false
+//similarly System.out.println(a<b); false
+//similarly System.out.println(a>=b); true
+//similarly System.out.println(a<=b); true
+//similarly System.out.println(a!=b); false
