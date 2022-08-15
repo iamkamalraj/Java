@@ -1,0 +1,11 @@
+public class Sample {
+	public static void main(String[] args) {
+				int age = 20;
+		String result = null;
+		if(age>=18)
+			result = "allowed" ;
+		else
+			result = "not allowed";
+		System.out.println(result);
+	}
+}
