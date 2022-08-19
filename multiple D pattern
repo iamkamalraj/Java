@@ -1,5 +1,5 @@
 
-//frame for ema
+//multiple j loop D pattern
 public class Sample {
 	public static void main(String[] args) {
 		int n=5;
