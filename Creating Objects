@@ -8,7 +8,8 @@ class Laptop{
 		System.out.println("Compile");
 		System.out.println(ram);
 	}
-}
+	
+} 
 	class Demo{ 
 	public static void main(String[] args) {
 		Laptop obj = new Laptop();
