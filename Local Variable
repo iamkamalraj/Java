@@ -17,3 +17,30 @@ public class LaunchAlien {
 	}
 
 }
+
+/////////////////////////////////
+class Alien
+{
+	int age;
+	void show()
+	{
+				age = 10; // if u Declare a variable as local u have to provide value.
+		          //If not Default values will not be included 
+		System.out.println(age);
+	}
+	
+	void disp()
+	{
+		System.out.println(age);
+	}
+}
+public class LaunchAlien {
+
+	public static void main(String[] args) {
+
+		 Alien a = new Alien();
+		 a.show();
+	}
+
+}
+
