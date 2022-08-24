@@ -45,3 +45,24 @@ public class LaunchCalculator {
 
 }
 
+//3rd Method using return
+class Calculator
+{
+	int a;
+	int b;
+	
+	int add(int a, int b)
+	{
+		int c =a+b;
+		return c;
+	}
+}
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		Calculator calc = new Calculator();
+		int result=calc.add(10,20);
+		System.out.println(result);
+	}
+}
+
