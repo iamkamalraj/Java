@@ -19,3 +19,29 @@ public class LaunchCalculator {
 		calc.add();
 			}
 }
+
+//2nd method
+class Calculator
+{
+	int a;
+	int b;
+	
+	void add(int a, int b)
+	{
+		int c =a+b;
+		System.out.println(c);
+				
+	}
+}
+
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		Calculator calc = new Calculator();
+		calc.add(10,20);
+				
+		
+	}
+
+}
+
