@@ -66,3 +66,23 @@ public class LaunchCalculator {
 	}
 }
 
+// Without Passing anything in add method
+class Calculator
+{
+	int a;
+	int b;
+	
+	int add()
+	{
+		int c =10+20;
+		return c;
+	}
+}
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		Calculator calc = new Calculator();	
+		int result=calc.add();
+		System.out.println(result);
+	}
+}
