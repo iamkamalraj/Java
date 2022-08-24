@@ -1,3 +1,5 @@
+// Therer are 4 main Methods
+// method1 
 class Calculator
 {
 	int a;
