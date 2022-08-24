@@ -1,0 +1,21 @@
+class Calculator
+{
+	int a;
+	int b;
+	
+	void add()
+	{
+		a=10;
+		b=20;
+		int c =a+b;
+		System.out.println(c);
+	}
+}
+
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		Calculator calc = new Calculator();
+		calc.add();
+			}
+}
