@@ -1,0 +1,25 @@
+class Calculator
+{
+	public int add(int num1,int num2)
+	{
+		int result = num1 + num2; 
+		return result;
+	}
+}
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		
+		int num1=5;
+		int num2=6;
+
+		Calculator calc = new Calculator();
+		
+		int result = calc.add(num1,num2);
+				
+		System.out.println(result);
+	}
+}
+
+
+
