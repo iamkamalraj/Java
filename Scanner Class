@@ -1,0 +1,39 @@
+//getting input from console
+
+import java.util.Scanner;
+
+//other way for both 2&3 numbers
+
+class Calculator
+
+	{public int add(int num1,int num2)
+	{
+		int result = num1 + num2; 
+		return result;
+	}
+		public int add(int num1,int num2, int num3)
+	{
+		int result = num1 + num2 + num3 ; 
+		return result;
+	}
+}
+public class LaunchCalculator {
+	
+	public static void main(String Args[]) {
+		
+		Scanner sc = new Scanner(System.in);  //scanner class
+		
+		int num1= sc.nextInt(); //getting integer input
+		int num2= sc.nextInt();
+		int num3= sc.nextInt();
+
+		Calculator calc = new Calculator();
+		
+		
+		int result = calc.add(num1,num2);
+		int result1= calc.add(num1,num2,num3);
+				
+		System.out.println(result);
+		System.out.println(result1);
+	}
+}
