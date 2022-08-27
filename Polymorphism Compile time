@@ -1,0 +1,35 @@
+
+class Addition
+{
+	void add(int a, float b)
+		{
+			float c = a + b;
+			System.out.println(c);
+		}
+	
+	float add(int a, int b)
+		{
+			float c = a+b;
+			System.out.println(c);
+			return c;
+		}
+	
+	void add(int a, int b, float c)
+		{
+			float res = a + b;
+			System.out.println(c);
+		}
+}
+
+public class LaunchCal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
+
+		Addition ad= new Addition();
+		ad.add(10, 20);
+		ad.add(10,20,5f);
+		ad.add(10,20,30);
+	}
+
+}
