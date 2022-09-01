@@ -13,7 +13,7 @@ public class LaunchFE {
 
 }
 
-//2D Array For Each
+//2D Array For Each loop
 public class LaunchFE {
 	
 	public static void main(String[] args) {
