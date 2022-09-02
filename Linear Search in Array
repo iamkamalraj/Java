@@ -19,3 +19,30 @@ public class LaunchAA {
 	}
 
 }
+
+// Updates
+public class LaunchAA {
+
+	public static void main(String[] args) {
+		
+		int a [] =  {10,20,30,40,50};
+		int key = 20;
+				
+		for(int i=0; i<a.length; i++ )
+			{
+				if (key==a[i])
+				{
+					System.out.println("Key Found in collection at index " + i);
+					System.exit(0);	//If keys found i wanted to stop searching so This Means my work is over i want to exit
+				}
+// 				Insted  of this
+//				else {
+//					System.out.println("Key Not Found");
+//				}
+		}
+		System.out.println("Key Not found");
+	}
+
+}
+
+
