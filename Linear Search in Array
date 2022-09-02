@@ -1,0 +1,21 @@
+
+public class LaunchAA {
+
+	public static void main(String[] args) {
+		
+		int a [] =  {10,20,30,40,50};
+		int key = 50;
+				
+		for(int i=0; i<a.length; i++ )
+			{
+				if (key==a[i])
+				{
+					System.out.println("Key Found in collection at index " + i);
+				}
+				else {
+					System.out.println("Key Not Found");
+				}
+		}
+	}
+
+}
