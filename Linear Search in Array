@@ -35,10 +35,12 @@ public class LaunchAA {
 					System.out.println("Key Found in collection at index " + i);
 					System.exit(0);	//If keys found i wanted to stop searching so This Means my work is over i want to exit
 				}
-// 				Insted  of this
+				
+// 				Insted  of this we are trying System.exit
 //				else {
 //					System.out.println("Key Not Found");
 //				}
+
 		}
 		System.out.println("Key Not found");
 	}
