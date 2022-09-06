@@ -3,3 +3,12 @@
 //ANY THING ENCLOSED IN " " IS A STRING
 
 // 2 TYPES 1. IMMUTABLE AND MUTABLE
+
+// IMMUTABLE STRING
+//CANNOT CHANGE ONCE CREATED
+
+String str = "Alien";
+
+String str = new String("Alien");
+
+
