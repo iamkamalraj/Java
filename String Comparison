@@ -12,3 +12,18 @@ public class Launch1 {
 		System.out.println(s1==s3);
 	}
 }
+
+// in  Heap Area
+
+public class Launch1 {
+	
+	public static void main(String[] args) {
+		
+			
+		String s1= new String ("String");
+		String s2= new String ("String");
+		
+		System.out.println(s1==s2);
+	}
+}
+
