@@ -59,5 +59,24 @@ public class Launch1 {
 		System.out.println(s1.compareToIgnoreCase(s2));
 
 	}
+}
+
+// Example 2
+
+public class Launch1 {
+	
+	public static void main(String[] args) {
+		
+		String s1="sehwag";
+		String s2="sauraw";
+		System.out.println(s1.compareToIgnoreCase(s2));
+		
+		int res = s1.compareToIgnoreCase(s2);
+		if (res==0);
+		System.out.println("Strings are Equal");
+
+	}
 
 }
+
+
