@@ -1,0 +1,18 @@
+
+public class Launch6 {
+
+	public static void main(String[] args) {
+
+		String S1 = "Telusko";
+		String S2 = "iNeuron";
+		String S3 = "Telusko" + "iNeuron"; // Here Memory is allocated in SCP
+		
+		String S4 = S1 + S2 ; // Here Memory is allocated in Heap Area Because References are Different
+		String S5 = S1 + "iNeuron";
+		
+		System.out.println(S3 == S4);
+		
+				
+	}
+
+}
