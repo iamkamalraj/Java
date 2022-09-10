@@ -1,0 +1,19 @@
+
+public class Launch8 {
+
+	public static void main(String[] args) {
+
+		String s1 = "RajaRamMohanRoy";
+
+		System.out.println(s1.toLowerCase()); //rajarammohanroy
+		System.out.println(s1.toUpperCase()); //RAJARAMMOHANROY
+		System.out.println(s1.charAt(3)); // To access Index
+		System.out.println(s1.substring(4,8)); //RamM (From 4th index to  8th Index)
+		System.out.println(s1.endsWith("y")); //true
+		System.out.println(s1.startsWith("y")); //false
+		System.out.println(s1.length()); //15
+		
+    //Still more
+	}
+
+}
