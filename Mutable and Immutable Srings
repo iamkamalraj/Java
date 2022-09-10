@@ -16,3 +16,15 @@ public class Alien {
 //op Sachin
 
 
+// Mutable
+
+public class Alien {
+
+	public static void main(String[] args) {
+
+		StringBuffer a = new StringBuffer("Sachin") ;
+		a.append("Tendulkar");
+		System.out.println(a);
+	}
+}
+// op SachinTendulkar
