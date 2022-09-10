@@ -1,1 +1,18 @@
 // Mutable and Immutable Srings
+
+//Immutable
+
+public class Alien {
+
+	public static void main(String[] args) {
+
+		String a = new String("Sachin") ;
+		a.concat("Tendulkar");
+		System.out.println(a);
+		
+	}
+
+}
+//op Sachin
+
+
