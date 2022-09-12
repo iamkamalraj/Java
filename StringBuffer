@@ -1,0 +1,18 @@
+
+public class Launch8 {
+
+	public static void main(String[] args) {
+
+		String s1 = new String("Sachin"); 
+		String s2 = new String("Sachin");
+		System.out.println(s1.equals(s2));// equals method is implemented to check the content of the string
+		
+		System.out.println("*********************************************");
+
+		StringBuffer sb1 = new StringBuffer("Sachin"); 
+		StringBuffer sb2 = new StringBuffer("Sachin");
+		System.out.println(sb1.equals(sb2));// equals method is not available in StringBuffer class, It is the part of Object class
+		
+	}
+
+}
