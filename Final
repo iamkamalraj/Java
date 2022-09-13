@@ -1,0 +1,40 @@
+final keyword( access modifer)
+=============================
+It is an access modifier which can be applied at 3 levels
+a. variable(primitive and reference)
+b. class level.
+c. method level.
+If the variable is made as final then the value for those variables can't be changed,if we try to change
+it would result in "CompileTimeError".
+final variables would be resolved at the compile time only by the compiler.
+eg:
+class Test{
+public static void main(String[] args){
+final int a=10;
+int b=20;
+b++;
+a++;// a= a+1; change for the variable:CE(compiletime error)
+System.out.println(a);
+System.out.println(b);
+}
+}
+final vs Immutablity
+===================
+class Test{
+public static void main(String[] args){
+final StringBuffer sb=new StringBuffer("sachin");
+sb.append("IND");
+System.out.println(sb);//sachinIND
+sb=new StringBuffer("tendulkar");//CE
+System.out.println(sb);
+}
+}
+If the variable is of primitive type and if it is final then the value of the variable should not be changed,if we try to
+change it would result in "CompileTimeError".
+If the variable if of reference type and if it is of mutable nature then as per its mutable nature the object data can be
+changed,it would not result in "CompileTimeError",but if we try to reassign the reference variable with a new object address
+then it would result in "CompileTimeError".
+note:
+final variable(valid concept)
+final object(not valid)
+immutable variable(not valid)
