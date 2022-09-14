@@ -23,3 +23,8 @@ eg:
 eg:
       StringBuffer sb = new StringBuffer(19);//here the integer no specifies the capacity of StringBuffer
       System.out.println(sb.capacity());
+      
+eg:
+      StringBuffer sb = new StringBuffer("sachin");//here the capacity will be (length of String + 16)
+      System.out.println(sb.capacity());
+      System.out.println(sb.length());
