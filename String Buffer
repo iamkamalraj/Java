@@ -19,3 +19,7 @@ eg:
       
       sb.append("rstuvwxyz");
       System.out.println(sb.capacity());// 34
+      
+eg:
+      StringBuffer sb = new StringBuffer(19);//here the integer no specifies the capacity of StringBuffer
+      System.out.println(sb.capacity());
