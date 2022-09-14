@@ -1,0 +1,21 @@
+StringBuffer
+============
+It is avaialble in java.lang package.
+Methods of StringBuffer
+========================
+capacity() => the default capacity of StringBuffer is 16
+if the capacity is filled internally jvm will increase the size using the following formulae
+newCapacity= (currentcapcity + 1) * 2
+
+eg:
+      StringBuffer sb = new StringBuffer();
+      System.out.println(sb.capacity());//16
+      
+      sb.append("abcdefghijklmnop");
+      System.out.println(sb.capacity());//16
+      
+      sb.append("q");
+      System.out.println(sb.capacity()); // (16+1) * 2
+      
+      sb.append("rstuvwxyz");
+      System.out.println(sb.capacity());// 34
