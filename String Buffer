@@ -44,3 +44,22 @@ eg:
              insert(int,String)
              insert(int,int) => it inserts the String at the specified index
              insert(int,long)
+
+
+eg:
+
+      StringBuffer sb = new StringBuffer("abcdefgh");
+      System.out.println(sb.capacity());// 8 + 16 => 24
+      sb.insert(2, "xyz");
+      System.out.println(sb);// abxyzcdefgh
+      sb.insert(11, 9);
+      System.out.println(sb); // abxyzcdefgh9
+      delete(int,int)
+      deleteCharAt(int)
+    
+eg://StringIndexOutOfBoundsException
+      StringBuffer sb = new StringBuffer();
+		sb.insert(2, "xyz");
+		System.out.println(sb);
+		
+		sb.insert(11, "9");
