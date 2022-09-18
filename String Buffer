@@ -61,6 +61,5 @@ eg://StringIndexOutOfBoundsException
       StringBuffer sb = new StringBuffer();
 		sb.insert(2, "xyz");
 		System.out.println(sb);
-		
 		sb.insert(11, "9");
 		
