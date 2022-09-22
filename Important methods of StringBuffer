@@ -1,0 +1,67 @@
+Important methods of StringBuffer
+================================
+length() => it counts the no of characters present in the StringBuffer Object
+append(String)
+append(Boolean) => it appends the given data to the Old StringBuffer object
+append(float)
+eg:
+StringBuffer sb = new StringBuffer();
+System.out.println(sb.capacity());//16
+sb.append("The value of PIE IS :: ");
+sb.append(3.1414);
+sb.append(", This is exactly ::");
+sb.append(true);
+System.out.println(sb);
+System.out.println(sb.capacity());//70
+System.out.println(sb.length());//54
+insert(int,String)
+insert(int,int) => it inserts the String at the specified index
+insert(int,long)
+eg:
+StringBuffer sb = new StringBuffer("abcdefgh");
+System.out.println(sb.capacity());// 8 + 16 => 24
+sb.insert(2, "xyz");
+System.out.println(sb);// abxyzcdefgh
+sb.insert(11, 9);
+System.out.println(sb); // abxyzcdefgh9
+delete(int,int)
+deleteCharAt(int)
+eg:
+StringBuffer sb = new StringBuffer("sachinrameshtendulkar");
+System.out.println(sb.capacity());// 21+16 = 37
+System.out.println(sb.length());//21
+System.out.println("********************************");
+sb.delete(6,12);// start to end-1
+System.out.println(sb);//sachintendulkar
+sb.deleteCharAt(6);
+System.out.println(sb);//sachinendulkar
+sb.deleteCharAt(21);//SIOBE(StringIndexOutOfBoundsException)
+reverse() => It is used to reverse the StringBuffer Object
+eg:
+StringBuffer sb = new StringBuffer("sachinrameshtendulkar");
+System.out.println(sb.capacity());// 21+16 = 37
+System.out.println(sb.length());//21
+sb.reverse();
+System.out.println(sb);
+setLength(int) => it is possible to reduce the length of the String at the runtime
+eg:
+StringBuffer sb = new StringBuffer("sachinrameshtendulkar");
+System.out.println(sb);//sachinrameshtendulkar
+System.out.println(sb.length());// 21
+sb.setLength(6);
+System.out.println(sb.length());//6
+System.out.println(sb);//sachin
+trimToSize() => It will change the capacity to the length of the String
+eg:
+StringBuffer sb = new StringBuffer(1000);
+System.out.println(sb.capacity());// 1000
+sb.append("iNeuron");
+System.out.println(sb.capacity());// 1000
+sb.trimToSize();
+System.out.println(sb.capacity());//7
+ensureCapacity(int) => it is used to increase the capacity to the specific limit
+eg:
+StringBuffer sb = new StringBuffer();
+System.out.println(sb.capacity());//16
+sb.ensureCapacity(10000);
+System.out.println(sb.capacity());//10000
