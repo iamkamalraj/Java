@@ -10,3 +10,17 @@ public class Stringsprog {
 	}
 
 }
+
+// Caps to small
+
+public class Stringsprog {
+		
+	public static void main(String[] args) {
+		
+		char ch = 'A';
+		ch=(char) (ch+32);
+		System.out.println(ch);
+	
+	}
+
+}
