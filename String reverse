@@ -69,6 +69,61 @@ public class Strinng1 {
 
 }
 
+//palandrome
+import java.util.Scanner;
+
+public class Strinng1 {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		String s1=scan.nextLine();
+		String s2 ="";
+		
+		for (int i= s1.length()-1; i>=0 ; i--) 
+		{
+			s2=s2+s1.charAt(i);
+		}
+			if(s1.equals(s2))
+		{
+			System.out.println("Palendrome");	
+		}
+			else
+		{
+			System.out.println("Not Palendrome");
+		}
+	}
+
+}
+
+//Not Palendrome
+import java.util.Scanner;
+
+public class Strinng1 {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		String s1=scan.nextLine();
+		String s2 ="";
+		
+		for (int i= s1.length()-1; i>=0 ; i--) 
+		{
+			s2=s2+s1.charAt(i);
+		}
+			if(s1.equals(s2))
+		{
+			System.out.println("Palendrome");	
+		}
+			else
+		{
+			System.out.println("Not Palendrome");
+		}
+	}
+
+}
+
+
 
 
 
