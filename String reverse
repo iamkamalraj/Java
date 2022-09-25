@@ -45,7 +45,7 @@ public class Strinng1 {
 	}
 }
 
-//Palendrome
+//Palendrome  // both same like MOM 
 public class Strinng1 {
 
 	public static void main(String[] args) {
