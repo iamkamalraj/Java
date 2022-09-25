@@ -18,3 +18,34 @@ public class Strinng1 {
 	}
 
 }
+
+///Think Twice ---- Twice Think
+
+
+public class Strinng1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// iNeuron - norueNi
+		
+			
+	
+///Think Twice ---- Twice Think
+
+		String s3="Think Twice";
+		String s4 ="";
+		
+		String a[] = s3.split(" ");
+		
+		for (int i= a.length-1; i>=0 ; i--) {
+			s4=s4+a[i]+ " ";
+		}
+		System.out.println(s4);
+			
+		
+	}
+
+}
+
+
