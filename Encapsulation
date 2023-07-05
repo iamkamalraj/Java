@@ -1,0 +1,38 @@
+3 pillars of oops
+=================
+1. Encapsulation => It speaks about security
+2. Inheritance => It speaks about reusability
+3. Polymorphism => It speaks about flexibility
+
+Datahiding
+==========
+Our internal data should not go to the outside world directly that is outside person should
+not
+access our interal data directly.
+By using private modifiers we can implement "datahiding".
+eg:: class Account{
+private double balance;
+}
+Advantage of Datahiding is security.
+Recommended modifier for data members is private.
+
+Encapsulation
+=============
+● Binding of data and corresponding methods into a single unit is called
+"Encapsulation".
+● It also refers to providing controlled access to the most important component (data)
+of a class using the private keyword, setter and getter method.
+
+Syntax for setter method
+a. compulsory the method name should start with set.
+b. it should be public.
+c. return type should be void.
+d. compulsorily it should have some argument.
+Syntax for getter method
+a. compulsory the method name should start with get.
+b. it should be public.
+c. return type should not be void.
+d. compulsorily it should not have any argument.
+JavaBean
+========
+It is a simple java class with private properties and public getter and setter methods.
