@@ -1,0 +1,91 @@
+package basics;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		int nums[] = new int[4];
+		
+		
+		// Two Dimensional Array
+		int nums1[][] = //First array
+			
+			{
+				{3,8,5},		// this array is represented in nums1[0] 
+				{7,4,8,4},		// this is called gagged array no rows is fixed and column varies
+				{9,8}  // this is called gagged array no rows is fixed and column varies
+				
+				//array index out of bound exception
+				// so
+				// 
+			};
+		
+		int nums2[][] = //Second array
+				
+			{
+				{3,8,5},
+				{4,8,4},
+				{9,8,5}
+			};
+		
+//		System.out.println(nums.length); // Prints the size of the array
+//		System.out.println(nums2[0].length);  // prints the size of rows
+//		System.out.println(nums1[2].length); // Prints the gagged array row length 
+		
+		
+		
+		
+//		
+//		for(int i=0; i<3; i++) //for printing the array 
+//		{
+//			for(int j=0; j<3; j++)
+//			{
+//				System.out.print(nums2[i][j] + " "); // i will iterate b/w rows // j  for column
+//			}
+//			System.out.println();
+//		}
+		
+		// So for gagged array
+		for(int i=0; i<nums1.length; i++) //for printing the array  .length for array
+			{
+				for(int j=0; j<nums1[i].length; j++)	// for gagged array
+				{
+					System.out.print(nums1[i][j] + " "); // i will iterate b/w rows // j  for column
+				}
+				System.out.println();
+			}
+		
+		
+		
+		
+				
+//		int nums[][]= new int[3][];
+//		
+//		//First Row will have 3 valus
+//		// Second ROW WILL HAVE 4 valuses
+//		//         ""
+//		nums[0]=new int[3];
+//		nums[1]=new int[4];
+//		nums[2]=new int[12];
+//		
+//		// first row
+//		nums[0][0] =3;
+//		nums[0][1] =5;
+//		nums[0][2] =7;
+//		
+//		
+//		// Second Row
+//		nums[0][0] =3;
+//		nums[0][1] =5;
+//		nums[0][2] =7;
+//		
+//		// and list goes on
+		
+		
+		
+		
+	} 
+	
+
+}
