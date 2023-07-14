@@ -1,0 +1,48 @@
+package basics;
+
+public class Object {
+
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+
+//  Kamal obj = new Kamal();
+//  
+//  
+//  System.out.println(obj.name);
+//  System.out.println(obj.age);
+//// }
+//
+//}
+//
+//class Kamal{
+// String name = "Kamal Raj";
+//  int age = 22;
+   
+   
+  
+  
+  Poovannan obj = new Poovannan();
+  Poovannan obj2 = new Poovannan();
+  
+  obj2.name= "kamalraj";
+  
+  
+  
+  System.out.println(obj.name);
+  System.out.println(obj.age);    
+  System.out.println(obj2.name);
+  
+  
+  obj2.code();
+  
+ }
+}
+class Poovannan{  
+ String name = "Poovanna Ragavan";
+ int age = 40;
+ 
+ public void code()
+ {
+  System.out.println("hiiiiiiii");
+ }
+}
