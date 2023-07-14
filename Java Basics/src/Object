@@ -24,7 +24,7 @@ public class Object {
   Poovannan obj = new Poovannan();
   Poovannan obj2 = new Poovannan();
   
-  obj2.name= "kamalraj";
+  obj2.name= "kamalraj"; 
   
   
   
@@ -33,7 +33,7 @@ public class Object {
   System.out.println(obj2.name);
   
   
-  obj2.code();
+  obj2.code(); // Method 
   
  }
 }
@@ -41,7 +41,7 @@ class Poovannan{
  String name = "Poovanna Ragavan";
  int age = 40;
  
- public void code()
+ public void code() // Method 
  {
   System.out.println("hiiiiiiii");
  }
