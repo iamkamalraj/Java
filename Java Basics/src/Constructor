@@ -1,0 +1,161 @@
+
+public class Project2 {
+
+	public static void main(String[] args) {
+		
+		
+		/*
+		 * Alien a1; a1=new Alien();
+		 * 
+		 * a1.show();
+		 */
+		
+		//can also be written in this way
+		
+		new Alien1().show(); //anonymous object  
+		
+		
+		
+
+	}
+
+}
+
+
+class Alien1
+{
+
+	String name="Navin";
+	int age=30;
+	String tech="Blockchain";
+	
+	
+	 
+	
+	public Alien1()
+	{
+		System.out.println("in constructor");
+	}
+	public void show()
+	{
+		System.out.println("in show");
+	}
+}
+
+
+*********************************************************************************************
+
+
+
+public class Project3 {
+
+	public static void main(String[] args) {
+		
+		Alien2 obj1=new Alien2();
+		
+		obj1.name="Navin";
+		
+		obj1.age=30;
+		
+		obj1.tech="Java";
+		
+		obj1.show();
+		
+		Alien2 obj2=new Alien2();
+		
+		obj2.name="Lohit";
+		
+		obj2.age=14;
+		
+		obj2.tech="Blockchain";
+		
+		obj2.show();
+		
+
+	}
+
+}
+
+
+class Alien2
+{
+	String name;
+	int age=0;
+	String tech;
+	
+	public Alien2()
+	{
+		System.out.println("In Constructor");
+	}
+	
+	public void show()
+	{
+		System.out.println("Name "+name + " Age "+age + " Tech "+tech);
+	}
+}
+
+
+*****************************************************************************************************************
+
+
+public class Project4 {
+
+	public static void main(String[] args) {
+		
+		
+       Alien4 obj1=new Alien4("chintu");
+       
+		obj1.name="Navin";
+		
+		obj1.age=30;
+		
+		obj1.tech="Java";
+		
+		obj1.show();
+		
+		Alien4 obj2=new Alien4();
+		
+		obj2.name="Lohit";
+		
+		obj2.age=14;
+		
+		obj2.tech="Blockchain";
+		
+		obj2.show();
+		
+
+	}
+
+}
+
+class Alien4
+{
+	String name;
+	int age=0;
+	String tech;
+	
+	
+	//Constructor overloading
+	
+	public Alien4()
+	{
+		System.out.println("In Constructor");
+	}
+	
+	public Alien4(String  name1)
+	{
+		System.out.println("In Parametirzed constructor");
+		
+	}
+	
+	public void show()
+	{
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(tech);
+	}
+}
+
+
+**************************************************************************************************************************
+
