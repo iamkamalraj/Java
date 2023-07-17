@@ -1,0 +1,41 @@
+
+public class Project5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Alien5 obj1=new Alien5();
+		
+		
+		System.out.println(obj1.getName());
+	}
+
+}
+class Alien5
+{
+
+	
+	//Encapsulation
+	private String name="Navin";
+	private int age=30;
+	private String tech="Blockchain";
+	
+	
+	//getters
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getAge()
+	{
+		return age;
+	}
+	
+	public String getTech()
+	{
+		return tech;
+	}
+}
