@@ -1,3 +1,42 @@
+
+Inheritance :
+It is one of the pillars of Object Orientation.
+It always speaks about reusability.
+In java inheritance is achieved through the "extends" keyword.
+Inheritance is the process of one class acquiring properties(Fields) and behaviour(methods)
+of another class.
+It is also referred to as a writing project as a hierarchy of classes rather than a single class.
+Important points to be noted:
+● Private members of a class do not participate in Inheritance.
+● Constructor will not get inherited but it will get executed because of super() call
+present in child class Constructor.
+● Single Inheritance is allowed ( One class extending another class)
+● Multilevel Inheritance is Allowed
+● Multiple Inheritance is not permitted. It will lead to ambiguity to compiler also to the
+Diamond shape problem.
+● Cyclic Inheritance is not permitted.
+● Hierarchical Inheritance is allowed. (One class can have multiple child classes).
+Parent class== Existing class== Base class== Super class
+Child class== Derived class== Subclass
+This relationship also known as is - A relationship.
+Inherited Methods vs Overridden methods vs Specialized method
+Inherited Method : Such method which is inherited from parent class to child class
+and used as it is in child class without any modification.
+Overridden method : Such method which is inherited from parent class to child class
+and modified in child class to meet child class requirement.
+Specialized method : Such method which is present only in child class but not in
+parent class.
+
+Upcasting vs Downcasting:
+Upcasting : Creating Parent type reference for child type Object.
+It will achieve loose coupling best suited for polymorphism.
+Downcasting : Temporarily converting parent type reference to child type so that
+specialised method of child class can be accessed.
+
+
+*******************************************************************************************************************************************
+
+
 class Plane
 {
 	public void fly()
