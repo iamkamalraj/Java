@@ -1,0 +1,31 @@
+
+class Books{							
+	private int pgNo;					
+	
+	public void setpgNo(int x)	//Setter					//3
+	{														
+		
+		if (x>0 && x<=100)
+		{
+			pgNo = x;
+		}
+	}
+	
+		
+	public int getpgNo()		//getter					//4
+	{
+		return pgNo;
+	}
+
+}
+public class Encapsuation1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Books b = new Books ();							//1
+		b.setpgNo(20);									//2
+		System.out.println(b.getpgNo()); 
+		
+	}
+
+}
