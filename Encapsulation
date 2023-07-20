@@ -39,8 +39,6 @@ It is a simple java class with private properties and public getter and setter m
 
 ***********************************************************************************************************************************************
 
-
-
 class Department
 {
 	private int Age;
@@ -79,3 +77,43 @@ public class LaunchEncap {
 }
 
 
+ ***********************************************************************************************************************************
+
+
+class Pen{
+	private int cost;						// For Generating Setters and Getters
+	private String brand;					//Right click > source > Generate setters and getters> generate
+	
+	public void setcost(int cost)
+	{
+		this.cost=cost;							// this. keyword used in instance variable
+	}
+	public void setbrand(String brand)
+	{
+		this.brand=brand;
+	}
+	public int getcost()
+	{
+		return cost;
+	}
+	public String getbrand()
+	{
+		return brand;
+	}
+}
+
+
+public class EncapPen {
+
+	public static void main(String[] args) {
+		
+		Pen p = new Pen();
+		p.setcost(10);
+		p.setbrand("Cello");
+		System.out.println(p.getcost());
+		System.out.println(p.getbrand());
+	
+
+	}
+
+}
