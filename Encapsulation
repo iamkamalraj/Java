@@ -40,6 +40,7 @@ It is a simple java class with private properties and public getter and setter m
 ***********************************************************************************************************************************************
 
 
+
 class Department
 {
 	private int Age;
@@ -62,19 +63,19 @@ class Department
 		{
 			return Name;
 		}
-
-
+}
 
 public class LaunchEncap {
 
 	public static void main(String[] args) {
 		
 		Department Dept1 = new Department();
-		Dept1.setAge(10);
-		System.out.println();
-		System.out.println();
+		Dept1.setAge(22);
+		Dept1.setName("Kamal");
+		System.out.println(Dept1.getAge());
+		System.out.println(Dept1.getName());
 
 	}
-
 }
+
 
