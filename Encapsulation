@@ -36,3 +36,45 @@ d. compulsorily it should not have any argument.
 JavaBean
 ========
 It is a simple java class with private properties and public getter and setter methods.
+
+***********************************************************************************************************************************************
+
+
+class Department
+{
+	private int Age;
+	private String Name;
+	
+		
+		public void setAge(int a)
+		{
+			Age=a;
+		}
+		public void setName(String n)
+		{
+			Name = n;
+		}
+		public int getAge()
+		{
+			return Age;
+		}
+		public String getName()
+		{
+			return Name;
+		}
+
+
+
+public class LaunchEncap {
+
+	public static void main(String[] args) {
+		
+		Department Dept1 = new Department();
+		Dept1.setAge(10);
+		System.out.println();
+		System.out.println();
+
+	}
+
+}
+
