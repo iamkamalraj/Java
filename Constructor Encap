@@ -1,3 +1,51 @@
+class Hotel{
+	
+	private int cost;
+	private String Name;
+	
+	public int getCost() {
+		return cost;
+	}
+	public String getName() {
+		return Name;
+	}
+	public Hotel()							//1		//7
+	{
+		this(10 , "Dosa");						
+	}
+	public Hotel (int cost, String Name)	//2		//8
+	{
+		this.cost=cost;
+		this.Name=Name;
+	}
+	public Hotel(int cost)						//5
+	{
+		this();									//6
+		this.cost=cost;							//9
+	}
+	
+}
+
+public class EncapConstr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Hotel h1 = new Hotel();					//1 Zero Parametrized
+		System.out.println(h1.getCost());		// 3
+		System.out.println(h1.getName());
+		
+		Hotel h2 = new Hotel(30);				//Paramitrized
+		System.out.println(h2.getCost());		// 4	//10
+		System.out.println(h2.getName());
+		
+		
+		
+	}
+
+}
+
+*************************************************************************************************************************
 Constructor :
 
 ● Whenever we are creating an object some piece of the code will be executed
