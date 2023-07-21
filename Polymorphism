@@ -1,40 +1,74 @@
+
 class Animal
 {
+	public void eat()
+	{
+		System.out.println("Animals are eating");
 	}
+	public void sleep()
+	{
+		System.out.println("Animals are sleping");
+	}
+}
+
 class Tiger extends Animal
 {
-	}
-
-
-
-
-class Plane
-{
-	protected Animal fly()
+	public void eat()
 	{
-		System.out.println("Plane is flying");
-		Animal a=new Animal();
-		return a;
+		System.out.println("Tiger is eating");
+	}
+	public void sleep()
+	{
+		System.out.println("Tiger is sleping");
 	}
 }
 
-class CargoPlane extends Plane
+class Monkey extends Animal
 {
-	 public Tiger fly()
+	public void eat()
 	{
-		System.out.println("Cargo plane flies at lower height");
-		Tiger t=new Tiger();
-		return t;
+		System.out.println("Monkey is eating");
+	}
+	public void sleep()
+	{
+		System.out.println("MOnkey is sleping");
 	}
 }
 
+class Deer extends Animal
+{
+	public void eat()
+	{
+		System.out.println("Deer is eating");
+	}
+	public void sleep()
+	{
+		System.out.println("Deer is sleping");
+	}
+}
 
+class Forest	//Generalized Class for code simplicity
+{
+	public void permit (Animal ani)		//Here parent type reference for child type object is upcasting 	
+	{					// same method		// same method
+		ani.eat();			//Same method in many many forms this is polymorphism
+		ani.sleep();			//Same method in many many forms this is polymorphism
+	}
+}
 
-public class LaunchI1 {
+public class Polymorphism {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Tiger tg = new Tiger();
+		Monkey mk = new Monkey();
+		Deer dr = new Deer();
+		
+		Forest f = new Forest();	
+		f.permit(tg);
+		f.permit(mk);
+		f.permit(dr);
+		
 	}
 
 }
