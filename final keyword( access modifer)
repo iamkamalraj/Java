@@ -2,9 +2,9 @@ final keyword( access modifer)
 =============================
 
 It is an access modifier which can be applied at 3 levels
-a. variable(primitive and reference)
-b. class level.
-c. method level.
+a. variable(primitive and reference)    //final Variable cannpt be reinitialized. It will bejhave like constant
+b. class level.  -  // final class cannot inherit 
+c. method level.    // final method can be overridden but we cannot override
 
 If the variable is made as final then the value for those variables can't be changed,if we try to change
 it would result in "CompileTimeError".
