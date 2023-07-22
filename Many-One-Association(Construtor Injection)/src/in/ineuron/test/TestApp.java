@@ -3,6 +3,11 @@ package in.ineuron.test;
 import in.ineuron.entities.Branch;
 import in.ineuron.entities.Student;
 
+//It refers to relationship b/w entites, where mulitple instance of one entity should be mapped to
+//one instance of another entity.
+//eg: Multiple student have joined with single branch
+
+	
 public class TestApp {
 
 	// Driving code
@@ -27,3 +32,8 @@ public class TestApp {
 	}
 
 }
+
+
+******************************************OUTPUT**********************************************
+
+	
