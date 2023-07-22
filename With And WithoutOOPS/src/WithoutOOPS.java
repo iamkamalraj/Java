@@ -24,7 +24,9 @@ class Rectangle
 	
 	void disp()
 	{
-		System.out.println("Area of rect is "+area);
+		System.out.println("************************");
+		System.out.println("Area of rect is "+ area);
+		System.out.println("*************************\n");
 	}
 }
 
@@ -37,7 +39,7 @@ class Square
 	void input()
 	{
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Please enter length of square");
+		System.out.println("*******Ok Next********\n \n" + "Please enter length of square \n");
 		len=scan.nextFloat();
 		
 	}
@@ -49,7 +51,7 @@ class Square
 	
 	void disp()
 	{
-		System.out.println("Area of square is "+area);
+		System.out.println("*************************\n Area of square is "+area+ "\n*************************\n");
 	}
 }
 
@@ -62,7 +64,7 @@ class Circles
 	void input()
 	{
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Please enter length of circle");
+		System.out.println("*******Ok Next********\n \n" + "Please enter radius of circle \n" );
 		rad=scan.nextFloat();
 		
 	}
@@ -74,7 +76,7 @@ class Circles
 	
 	void disp()
 	{
-		System.out.println("Area of circle is "+area);
+		System.out.println("*************************\n Area of Circle is "+area+ "\n*************************\n");
 	}
 	
 }

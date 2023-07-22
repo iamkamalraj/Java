@@ -10,7 +10,7 @@ abstract class Shapes
 	void disp()
 	{
 		
-		System.out.println("The area is "+ area);
+		System.out.println("*************************\n Area is "+area+ "\n*************************\n");
 	}	
 }
 class Rectangle1 extends Shapes
@@ -20,9 +20,9 @@ class Rectangle1 extends Shapes
 	void input()
 	{
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Please enter length of rectangle");
+		System.out.println("Please enter length of rectangle = ");
 		len=scan.nextFloat();
-		System.out.println("Please enter breadth of rectangle");
+		System.out.println("Please enter breadth of rectangle = ");
 		brd=scan.nextFloat();
 	}
 	
@@ -39,7 +39,7 @@ class Square1 extends Shapes
 	void input()
 	{
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Please enter length of square");
+		System.out.println("Please enter length of square = ");
 		len=scan.nextFloat();
 		
 	}
@@ -59,7 +59,7 @@ class Circles1 extends Shapes
 	void input()
 	{
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Please enter length of circle");
+		System.out.println("Please enter radius of circle = ");
 		rad=scan.nextFloat();
 		
 	}
