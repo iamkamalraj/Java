@@ -1,4 +1,6 @@
+// In Java 8 Interface we can have such a method which has body which has implementation but that method must be default
 
+// In an interface we should write default keyword not like others it automatically orders default in local interface we should add it we write a body in interface method
 interface Demo1
 {
 	void disp();
