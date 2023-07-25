@@ -1,3 +1,15 @@
+INTERFACE
+// Collection of Public Abstract Methods
+// 100% Abstraction
+// Helps to Acheive Standardazion
+// can act like blue Print of class
+// all Methods ---> Public & Methods
+// Using Implements key word all the methods can be in herited in the implements class
+// Polymorphism van be acheived
+// reference of interface ti acheive polymorphism
+
+
+
 import java.util.Scanner;
 
 interface Calculator
