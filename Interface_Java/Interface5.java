@@ -1,4 +1,4 @@
-
+// In Java9 We can have private method in an interface either it can be called by either default method or static methods of an interface
 
 interface Telusko
 {
