@@ -1,3 +1,6 @@
+//Anonymous -- One more way of implementing Interface
+// This is one more easy approadch insted of classes & objects 
+// This is called Anonymous Inter class
 
 class Computer
 {
