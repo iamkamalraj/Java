@@ -9,13 +9,13 @@ public class ExceptionEg1
 		try
 		{
 		System.out.println("Welcome to division performing application");
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Enter the first Number to divide");
-        int a=scan.nextInt();
-        System.out.println("Enter the second number");
-        int b=scan.nextInt();
-        int res=a/b;							//Exception Occur when denominator is Zero
-        System.out.println("The result is "+ res);
+       		Scanner scan=new Scanner(System.in);
+	        System.out.println("Enter the first Number to divide");
+	        int a=scan.nextInt();
+	        System.out.println("Enter the second number");
+	        int b=scan.nextInt();
+	        int res=a/b;							//Exception Occur when denominator is Zero
+	        System.out.println("The result is "+ res);
 		}
 		catch(Exception e)
 		{
