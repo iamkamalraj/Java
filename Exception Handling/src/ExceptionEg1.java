@@ -14,7 +14,7 @@ public class ExceptionEg1
 	        int a=scan.nextInt();
 	        System.out.println("Enter the second number");
 	        int b=scan.nextInt();
-	        int res=a/b;							//Exception Occur when denominator is Zero
+	        int res=a/b;	//Exception Occur when denominator is Zero by going to Default exception Handler if thre is no user defined exceptions (try and catch)
 	        System.out.println("The result is "+ res);
 		}
 		catch(Exception e)
