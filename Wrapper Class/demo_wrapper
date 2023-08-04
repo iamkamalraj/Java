@@ -1,1 +1,47 @@
+Object class method
+===============
 
+public class Object{
+    public String toString(){
+      //return the reference of the Object
+    }
+    public boolean equals(Object o){
+      //compares the reference
+    }      
+}
+public final class String{
+    @Override
+    public String toString(){
+      //returns the content of the Object
+    }
+    @Override
+    public boolean equals(Object o){
+        //compares the content of the String
+    }
+}
+
+
+Note: equals() method is also overriden in all Wrapper class to compare the
+content.
+
+  
+public final class Integer{
+
+    @Override
+    public String toString(){
+      //returns the content of the Object
+    }
+
+    @Override
+    public boolean equals(Object o){
+      //compares the content.
+  }
+}
+
+
+
+eg#1.
+Integer i1=new Integer(10);
+Integer i2=new Integer(10);
+System.out.println(i1); //i1.toString() -> 10
+System.out.println(i1.equals(i2));//true
