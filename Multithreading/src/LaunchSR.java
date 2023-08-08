@@ -30,7 +30,6 @@ class Alpha extends Thread
 				
 			} catch (InterruptedException e)
 			{
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			System.out.println("Banking........");
@@ -68,7 +67,6 @@ class Alpha extends Thread
 				
 			} catch (InterruptedException e)
 			{
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			System.out.println("calc........");
