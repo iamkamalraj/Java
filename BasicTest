@@ -47,3 +47,49 @@ public class DemoCalc {
 
 ************************************************************************************************************************************
 
+package basics;
+
+import java.util.*;
+
+public class FindOddEven {
+	public void oddEven(int a) {
+		if (a % 2 == 1) {
+			System.out.println("The given Number is Odd");
+		} else {
+			System.out.println("The given Number is Even");
+		}
+	}
+
+	public void evenSeries(int b) {
+		System.out.println("\nThe Even Series are ");
+		for (int i = 1; i <= b; i++) {
+			if (i % 2 == 0) {
+				System.out.print(i + ",");
+			}
+		}
+	}
+
+	public void oddSeries(int b) {
+		System.out.println("The Odd Series are ");
+		for (int i = 0; i <= b; i++) {
+			if (i % 2 == 1) {
+				System.out.print(i + ",");
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter a Number ");
+		int a = scan.nextInt();
+		FindOddEven oe = new FindOddEven();
+		oe.oddEven(a);
+		oe.oddSeries(a);
+		oe.evenSeries(a);
+
+	}
+
+}
+
