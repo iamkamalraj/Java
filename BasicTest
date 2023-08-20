@@ -92,4 +92,77 @@ public class FindOddEven {
 	}
 
 }
+*************************************************************************************************************************************************
+package basics;
+
+public class MethodConcepts {
+
+	// void methods
+
+	public void display11() {
+		System.out.println("display11:this is non-static voidMethod ");
+	}
+
+	public static void display12() {
+		System.out.println("display12:this is static voidMethod ");
+	}
+	// returnType methods
+
+	public int display21() {
+		System.out.println("display21 :this is non-static returnMethod ");
+		return 6;
+	}
+
+	public static int display22() {
+		System.out.println("display22 : this is static returnMethod ");
+		return 7;
+
+	}
+
+	// parameterized methods
+	public void display31(String a) {
+		System.out.println("display31:this is non-static void with parameters");
+		System.out.println("a = " + a);
+	}
+
+	public static void display32(String a) {
+		System.out.println("display32:this is static void with parameters");
+		System.out.println("a = " + a);
+	}
+
+	public String display33(String a) {
+		System.out.println("display33:this is non-static returnMethod  with parameters");
+		return a;
+	}
+
+	public static String display34(String b) {
+		System.out.println("display34:this is static returnMethod  with parameters");
+		return b;
+	}
+
+	public static void main(String[] args) {
+
+		// calling methods
+		
+		MethodConcepts obj = new MethodConcepts();
+		obj.display11();
+		
+		MethodConcepts.display12();
+		
+		System.out.println(obj.display21());
+		
+		System.out.println(MethodConcepts.display22());
+		
+		obj.display31("Kamal");
+
+		MethodConcepts.display32("Kamal");
+		
+		System.out.println(obj.display33("Kamal"));
+		
+		
+		System.out.println(MethodConcepts.display34("Kamal-34"));
+		
+	}
+
+}
 
