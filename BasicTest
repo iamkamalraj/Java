@@ -214,3 +214,18 @@ public class Solution {
 }
 
 ************************************************************************************************************************************
+//Hacker Rank #5 Multiplication Tables
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i=0; i<=10; i++){
+            if(1<=i && i<=10){
+                int result = N * i;
+                System.out.println(N+" " + "x" + " " + i + " = "+ result);
+                sc.close();
+            }
+        }
+    }
+}
+************************************************************************************************************************************
