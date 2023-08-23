@@ -1,0 +1,252 @@
+package basics;
+
+class Calculator {
+	public void add(int a, int b) {
+		int c = a + b;
+		System.out.println("Addition of a+b is = " + c);
+
+	}
+
+	public void sub(int e, int f) {
+		int g = e - f;
+		System.out.println("Subraction of e-f is = " + g);
+	}
+
+	public static double div(double h, double i) {
+		double k = h / i;
+		return k;
+
+	}
+
+	public static double mod(double l, double m) {
+		double n = l % m;
+		return n;
+	}
+
+	public int mul(int o, int p) {
+		int q = o * p;
+		System.out.print("Multiplication of " + o + "*" + q + " is = ");
+		return q;
+	}
+}
+
+public class DemoCalc {
+
+	public static void main(String[] args) {// void - add sub //double - Div,Mod
+
+		Calculator calc = new Calculator();
+		calc.add(5, 5);
+		calc.sub(10, 5);
+		System.out.println(calc.mul(5, 5));
+		System.out.println("Division of h/i is = " + Calculator.div(4, 2));
+		System.out.println("Modulus of l%m is = " + Calculator.mod(5, 2));
+
+	}
+
+}
+
+************************************************************************************************************************************
+
+package basics;
+
+import java.util.*;
+
+public class FindOddEven {
+	public void oddEven(int a) {
+		if (a % 2 == 1) {
+			System.out.println("The given Number is Odd");
+		} else {
+			System.out.println("The given Number is Even");
+		}
+	}
+
+	public void evenSeries(int b) {
+		System.out.println("\nThe Even Series are ");
+		for (int i = 1; i <= b; i++) {
+			if (i % 2 == 0) {
+				System.out.print(i + ",");
+			}
+		}
+	}
+
+	public void oddSeries(int b) {
+		System.out.println("The Odd Series are ");
+		for (int i = 0; i <= b; i++) {
+			if (i % 2 == 1) {
+				System.out.print(i + ",");
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter a Number ");
+		int a = scan.nextInt();
+		FindOddEven oe = new FindOddEven();
+		oe.oddEven(a);
+		oe.oddSeries(a);
+		oe.evenSeries(a);
+
+	}
+
+}
+*************************************************************************************************************************************************
+package basics;
+
+public class MethodConcepts {
+
+	// void methods
+
+	public void display11() {
+		System.out.println("display11:this is non-static voidMethod ");
+	}
+
+	public static void display12() {
+		System.out.println("display12:this is static voidMethod ");
+	}
+	// returnType methods
+
+	public int display21() {
+		System.out.println("display21 :this is non-static returnMethod ");
+		return 6;
+	}
+
+	public static int display22() {
+		System.out.println("display22 : this is static returnMethod ");
+		return 7;
+
+	}
+
+	// parameterized methods
+	public void display31(String a) {
+		System.out.println("display31:this is non-static void with parameters");
+		System.out.println("a = " + a);
+	}
+
+	public static void display32(String a) {
+		System.out.println("display32:this is static void with parameters");
+		System.out.println("a = " + a);
+	}
+
+	public String display33(String a) {
+		System.out.println("display33:this is non-static returnMethod  with parameters");
+		return a;
+	}
+
+	public static String display34(String b) {
+		System.out.println("display34:this is static returnMethod  with parameters");
+		return b;
+	}
+
+	public static void main(String[] args) {
+
+		// calling methods
+		
+		MethodConcepts obj = new MethodConcepts();
+		obj.display11();
+		
+		MethodConcepts.display12();
+		
+		System.out.println(obj.display21());
+		
+		System.out.println(MethodConcepts.display22());
+		
+		obj.display31("Kamal");
+
+		MethodConcepts.display32("Kamal");
+		
+		System.out.println(obj.display33("Kamal"));
+		
+		
+		System.out.println(MethodConcepts.display34("Kamal-34"));
+		
+	}
+
+}
+
+************************************************************************************************************************************
+Hacker Rank #3
+
+package basics;
+
+import java.util.*;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int N = scanner.nextInt();
+
+		if (N % 2 != 0 || (N % 2 == 0 && N >= 6 && N <= 20)) {
+			System.out.println("Weird");
+
+		} else if (N % 2 == 0 && (N >= 2 && N <= 5) || N > 20) {
+			System.out.println("Not Weird");
+		}
+	}
+}
+
+************************************************************************************************************************************
+Hacker Rank #4
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int i = scan.nextInt();
+        scan.nextLine(); // get rid of empty newline char
+        double d = scan.nextDouble();
+        scan.nextLine(); // get rid of empty newline char
+        String s = scan.nextLine();
+        
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+        
+        scan.close();
+    }
+}
+
+************************************************************************************************************************************
+//Hacker Rank #5 Multiplication Tables
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i=0; i<=10; i++){
+            if(1<=i && i<=10){
+                int result = N * i;
+                System.out.println(N+" " + "x" + " " + i + " = "+ result);
+                sc.close();
+            }
+        }
+    }
+}
+************************************************************************************************************************************
+//Hacker Rank #6
+
+class Solution {
+	public static void main(String[] argh) {
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		for (int i = 0; i < t; i++) {
+			int a = in.nextInt();
+			int b = in.nextInt();
+			int n = in.nextInt();
+			int term = a;
+			for (int j = 0; j < n; j++) {
+				term += (Math.pow(2, j) * b);
+				System.out.print(term + " ");
+			}
+			System.out.println();
+		}
+		in.close();
+	}
+}
+************************************************************************************************************************************
