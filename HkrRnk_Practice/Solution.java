@@ -430,3 +430,41 @@ public class Solution {
     }
 }
 ************************************************************************************************************************************
+#Hacker Rank #12
+import java.util.*;
+import java.text.*;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		double amount = scanner.nextDouble();
+		scanner.close();
+
+		// US Dollar formatting
+		NumberFormat usFormatter = NumberFormat.getCurrencyInstance(Locale.US);
+		String usFormatted = usFormatter.format(amount);
+
+		// Indian Rupee formatting
+		Locale indiaLocale = new Locale("en", "IN");
+		NumberFormat indiaFormatter = NumberFormat.getCurrencyInstance(indiaLocale);
+//	    	indiaFormatter.setCurrencySymbol("Rs."); // Set currency symbol to "Rs."
+		String indiaFormatted = indiaFormatter.format(amount);
+
+		// Chinese Yuan formatting
+		Locale chinaLocale = Locale.CHINA;
+		NumberFormat chinaFormatter = NumberFormat.getCurrencyInstance(chinaLocale);
+		String chinaFormatted = chinaFormatter.format(amount);
+
+		// Euro formatting
+		Locale franceLocale = Locale.FRANCE;
+		NumberFormat franceFormatter = NumberFormat.getCurrencyInstance(franceLocale);
+		String franceFormatted = franceFormatter.format(amount);
+
+		// Print formatted values
+		System.out.println("US: " + usFormatted);
+		System.out.println("India: " + indiaFormatted);
+		System.out.println("China: " + chinaFormatted);
+		System.out.println("France: " + franceFormatted);
+	}
+}
