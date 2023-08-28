@@ -626,3 +626,22 @@ public class Solution {
 	}
 }
 ************************************************************************************************************************************
+//#Hacker Rank #16
+// import java.util.*;
+
+// public class Solution {
+
+// 	public static void main(String[] args) {
+// 		Scanner in = new Scanner(System.in);
+// 		String S = in.next();
+// 		int start = in.nextInt();
+// 		int end = in.nextInt();
+
+// 		char[] array = S.toCharArray();
+// 		for (int i = start; i <= end - 1; i++) {
+// 			System.out.print(array[i]);
+// 		}
+
+// 	}
+// }
+//************************************************************************************************************************************
