@@ -707,3 +707,38 @@ public class Solution {
 }
 
 ************************************************************************************************************************************
+#Hacker Rank #19
+import java.util.Scanner;
+
+public class Solution {
+
+static boolean isAnagram(String a, String b) {
+
+    String s = a.toLowerCase();
+    String t = b.toLowerCase();
+    int count[] = new int[26];
+    for(char c: s.toCharArray()){
+    count[c-97]++;
+    }
+    for(char c: t.toCharArray()){
+        count[c-97]--;
+    }
+    for(int i=0;i<26-1;i++){
+        if(count[i]!=0)
+        return false;
+
+    }
+    return true;
+}
+    
+  public static void main(String[] args) {
+    
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+        boolean ret = isAnagram(a, b);
+        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+    }
+}
+************************************************************************************************************************************
