@@ -803,3 +803,59 @@ public class Solution {
 //Invalid
 //Invalid
 ************************************************************************************************************************************
+//#Hacker Rank #22 // Passes only test case one
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		//System.out.print("Enter a String: ");
+		Scanner x = new Scanner(System.in);
+		String str[] = new String[6];
+		for (int i = 0; i < 6; i++) {
+			str[i] = x.nextLine();
+		}
+		x.close();
+
+		for (String item : str) {
+			String text[] = item.split("[.]", 5);
+			try {
+				if (text.length == 4) {
+					for (String i : text) {
+						if (i.length() <= 3 && i.length() >= 1) {
+
+							int num = Integer.parseInt(i);
+							if (num <= 255 && num >= 0) {
+								// System.out.println(i);
+							} else {
+								throw new NumberFormatException();
+							}
+						} else {
+							throw new NumberFormatException();
+						}
+					}
+				} else {
+					throw new NumberFormatException();
+				}
+				System.out.println("true");
+				} catch (NumberFormatException ex) {
+				System.out.println("false");
+			}
+		}
+	}
+}
+// Input
+// 000.12.12.034
+// 121.234.12.12
+// 23.45.12.56
+// 00.12.123.123123.123
+// 122.23
+// Hello.IP
+	
+// Output
+// true
+// true
+// true
+// false
+// false
+// false
+************************************************************************************************************************************
