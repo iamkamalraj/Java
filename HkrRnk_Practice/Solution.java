@@ -766,3 +766,40 @@ public class Solution {
 	}
 }
 ************************************************************************************************************************************
+//#Hacker Rank #21
+import java.util.Scanner;
+import java.util.regex.*;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int testCases = Integer.parseInt(in.nextLine());
+		String pattern = null;
+		while (testCases > 0) {
+			try {
+				pattern = in.nextLine();
+			} catch (java.util.NoSuchElementException e) {
+				break;
+			}
+			try {
+				Pattern.compile(pattern);
+				System.out.println("Valid");
+			} catch (PatternSyntaxException e) {
+				System.out.println("Invalid");
+			}
+		}
+		in.close();
+	}
+}
+//Sample Input
+//3
+//([A-Z])(.+)
+//[AZ[a-z](a-z)
+//batcatpat(nat
+//		
+//	
+//Sample Output
+//Valid
+//Invalid
+//Invalid
+************************************************************************************************************************************
