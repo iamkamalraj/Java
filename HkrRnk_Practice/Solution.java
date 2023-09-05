@@ -1057,3 +1057,16 @@ public class Solution {
 //So wait for a while
 //None
 //Imtiaz has a secret crush
+
+//!!!!!!Explanation!!!!!
+//For example
+//
+//Nayeem loves counseling
+//<([^<>/]+)> to match HTML start tag. The parentheses is to put the content into a group. In the example, it is h1. [^<>/] means we don't want to have any of thoses characters <, >, /.
+//
+//([^<>]+) to match the content between 2 tag
+//
+//to match HTML end tag. (\1) to match the same content as in the first group. In the example, it is h1
+
+//************************************************************************************************************************************
+
