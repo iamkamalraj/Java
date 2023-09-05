@@ -948,4 +948,69 @@ public class DuplicateWords {
 // in inthe
 // Hello Ab
 ************************************************************************************************************************************
+//#Hacker Rank #24
 
+//#Hacker Rank #24
+import java.util.Scanner;
+
+class UsernameValidator {
+	
+	 // Write regular expression here.
+	 
+	public static final String regularExpression = "[a-zA-Z][a-zA-Z_0-9]{7,29}";
+}
+
+//solution - 1st -first character of the username must be an alphabetic character i.e. either lowercase character or uppercase character . regex expression for this - [a-zA-Z]
+//
+//2nd -The username can only contain alphanumeric characters and underscores (_). Alphanumeric characters describe the character set consisting of lowercase characters , uppercase characters and digits .
+//regex expression for this - [a-zA-Z_0-9]
+//
+//
+//3rd-The username consists of 8 to 30 characters inclusive. If the username consists of less than 8 or greater than 30 characters, then it is an invalid username.
+//regex expression for this - {7,29}
+//
+//
+//so over all regex expression will be-"[a-zA-Z][a-zA-Z_0-9]{7,29}" 
+
+public class Solution {
+	private static final Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int n = Integer.parseInt(scan.nextLine());
+		while (n-- != 0) {
+			String userName = scan.nextLine();
+
+			if (userName.matches(UsernameValidator.regularExpression)) {
+				System.out.println("Valid");
+			} else {
+				System.out.println("Invalid");
+			}
+		}
+	}
+}
+
+//Sample Input 0
+
+//8
+//Julia
+//Samantha
+//Samantha_21
+//1Samantha
+//Samantha?10_2A
+//JuliaZ007
+//Julia@007
+//_Julia007
+//
+
+//Sample Output 0
+//
+//Invalid
+//Valid
+//Valid
+//Invalid
+//Invalid
+//Valid
+//Invalid
+//Invalid
+
+//************************************************************************************************************************************
