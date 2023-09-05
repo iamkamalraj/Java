@@ -950,7 +950,6 @@ public class DuplicateWords {
 ************************************************************************************************************************************
 //#Hacker Rank #24
 
-//#Hacker Rank #24
 import java.util.Scanner;
 
 class UsernameValidator {
