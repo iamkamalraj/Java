@@ -1138,4 +1138,30 @@ class Solution{
 // 000.000
 // -100
 //************************************************************************************************************************************
+//#Hacker Rank #27
+
+// import java.io.*;
+// import java.math.*;
+
+// public class Solution {
+// 	public static void main(String[] args) throws IOException {
+// 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+// 		String n = bufferedReader.readLine();
+// 		if (new BigInteger(n).isProbablePrime(1)) {
+// 			System.out.println("prime");
+// 		} else {
+// 			System.out.println("not prime");
+// 		}
+
+// 		bufferedReader.close();
+// 	}
+// }
+//Sample Input
+//13
+//
+//Sample Output
+//prime
+//************************************************************************************************************************************
+
 
