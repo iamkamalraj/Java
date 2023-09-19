@@ -1450,16 +1450,14 @@ Sample Input
 // Print the number of subarrays of  having negative sums.
 
 // Sample Input
-
 // 5
 // 1 -2 4 -5 1
+	
 // Sample Output
-
 // 9
 // Explanation
 
 // There are nine negative subarrays of :
-
 // Thus, we print  on a new line.
 //**************************************************************************************************************************************************************
 
