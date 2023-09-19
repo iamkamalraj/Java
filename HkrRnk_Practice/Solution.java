@@ -1421,3 +1421,13 @@ public class Solution {
     System.out.println(count);
 }
 }
+
+Sample Input
+
+// 5
+// 1 -2 4 -5 1
+	
+// Sample Output
+// 9
+
+
