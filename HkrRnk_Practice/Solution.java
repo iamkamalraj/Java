@@ -1673,19 +1673,43 @@ Output Format
 Output two lines. The first line should contain , and the second line should contain . Don't print any leading zeros.
 
 //**************************************************************************************************************************************************************
-In this problem, you have to add and multiply huge numbers! These numbers are so big that you can't contain them in any ordinary data types like a long integer.
+// In this problem, you have to add and multiply huge numbers! These numbers are so big that you can't contain them in any ordinary data types like a long integer.
 
-Use the power of Java's BigInteger class and solve this problem.
+// Use the power of Java's BigInteger class and solve this problem.
 
-Input Format
+// Input Format
 
-There will be two lines containing two numbers, a and b .
+// There will be two lines containing two numbers, a and b .
 
-Constraints
+// Constraints
 
- a and b are non-negative integers and can have maximum 200 digits.
+//  a and b are non-negative integers and can have maximum 200 digits.
 
-Output Format
+// Output Format
 
-Output two lines. The first line should contain a + b, and the second line should contain a x b . Don't print any leading zeros.
+// Output two lines. The first line should contain a + b, and the second line should contain a x b . Don't print any leading zeros.
+
+
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        try{
+        Scanner sc = new Scanner(System.in);
+        BigInteger In = new BigInteger(sc.next());
+        BigInteger In2 = new BigInteger(sc.next());
+        System.out.println(In.add(In2));
+        System.out.println(In.multiply(In2));
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        
+    }
+}
+
 
