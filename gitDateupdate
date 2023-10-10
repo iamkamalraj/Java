@@ -1,0 +1,167 @@
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder
+$ git config --global user.name "iamkamalraj"
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder
+$ git config --global user.email "kamalrajp.cse@gmail.com"
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder
+$ git init
+Initialized empty Git repository in E:/WORK/Git/New folder/.git/
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (master)
+$ git remote add origin https://github.com/iamkamalraj/Guesser-Game.git
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git pull origin main
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 18 (delta 7), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (18/18), 5.23 KiB | 157.00 KiB/s, done.
+From https://github.com/iamkamalraj/Guesser-Game
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git add .
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git commit -m "updating date"
+[main 1b48c87] updating date
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texttt.txt
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git commit --amend --date="2023-10-05 15:05:04"
+hint: Waiting for your editor to close the file... unix2dos: converting file E:/WORK/Git/New folder/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file E:/WORK/Git/New folder/.git/COMMIT_EDITMSG to Unix format...
+[main d2c7418] updating date commit on previous date
+ Date: Thu Oct 5 15:05:04 2023 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texttt.txt
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/iamkamalraj/Guesser-Game.git'
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/iamkamalraj/Guesser-Game.git'
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git summary
+git: 'summary' is not a git command. See 'git --help'.
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git show
+commit d2c741826d1dc002b5c89cd3667eb79fa98a9926 (HEAD -> main)
+Author: iamkamalraj <kamalrajp.cse@gmail.com>
+Date:   Thu Oct 5 15:05:04 2023 +0530
+
+    updating date
+    commit on previous date
+
+diff --git a/texttt.txt b/texttt.txt
+new file mode 100644
+index 0000000..1b631c3
+--- /dev/null
++++ b/texttt.txt
+@@ -0,0 +1 @@
++sdfh
+\ No newline at end of file
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push origin master --force
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/iamkamalraj/Guesser-Game.git'
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push\ --force
+git: 'push --force' is not a git command. See 'git --help'.
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push --force
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
+$ git push --set-upstream origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/iamkamalraj/Guesser-Game.git
+   24b74c3..d2c7418  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kamal@Kamal MINGW64 /e/WORK/Git/New folder (main)
