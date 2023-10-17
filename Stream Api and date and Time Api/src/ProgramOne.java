@@ -23,11 +23,11 @@ System.out.println(zt);
 //Period Object:
 //Period object can be used to represent quantity of time
 //Ex:
-// LocalDate today = LocalDate.now();
-// LocalDate birthday = LocalDate.of(1994,01,3);
-// Period p = Period.between(birthday,today);
-// System.out.printf("age is %d year %d months %d
-//days",p.getYears(),p.getMonths(),p.getDays());
-//
+LocalDate today = LocalDate.now();
+LocalDate birthday = LocalDate.of(1994,01,3);
+Period p = Period.between(birthday,today);
+System.out.printf("age is %d year %d months %d
+days",p.getYears(),p.getMonths(),p.getDays());
+
 //Output
 //age is 28 year 9 months 27 days
