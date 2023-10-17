@@ -22,6 +22,8 @@ public class DateAndTime {
 //1667107558145ms
 //2022-10-30(yyyy-mm-dd)
 //
+
+
 //Difference b/w java.util.Date and java.sql.Date
 //=====================================
 //java.util.Date
