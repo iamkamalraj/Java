@@ -16,18 +16,20 @@ import java.time.*;
 //30...10...2022
 //30-10-2022
 //
+
+
 //Once we get LocalTime object we can call the following methods on that object.
-//import java.time.*;
-//class Test {
-//        public static void main(String[] args) {
-//                   LocalTime time = LocalTime.now();
-//                   int h = time.getHour();
-//                   int m = time.getMinute();
-//                   int s = time.getSecond();
-//                   int n = time.getNano();
-//                   System.out.printf("\n%d:%d:%d:%d",h,m,s,n);
-//      }
-//}
+import java.time.*;
+class Test {
+       public static void main(String[] args) {
+                  LocalTime time = LocalTime.now();
+                  int h = time.getHour();
+                  int m = time.getMinute();
+                  int s = time.getSecond();
+                  int n = time.getNano();
+                  System.out.printf("\n%d:%d:%d:%d",h,m,s,n);
+     }
+}
 //Output
 //9:22:31:795000000
 //
