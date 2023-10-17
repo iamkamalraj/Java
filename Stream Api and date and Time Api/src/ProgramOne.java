@@ -12,10 +12,10 @@ import java.time.ZoneId;
 //
 //We can create ZoneId for a particular zone as follows
 //Ex:
-// ZoneId la = ZoneId.of("America/Los_Angeles");
-// ZonedDateTimezt = ZonedDateTime.now(la);
-// System.out.println(zt);
-//
+ZoneId la = ZoneId.of("America/Los_Angeles");
+ZonedDateTimezt = ZonedDateTime.now(la);
+System.out.println(zt);
+
 //Output
 //2022-10-29T23:19:59.718-07:00[America/Los_Angeles]
 //
