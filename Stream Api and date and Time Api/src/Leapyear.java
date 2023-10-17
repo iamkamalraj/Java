@@ -20,18 +20,16 @@ import java.time.Year;
                   System.out.printf("%d is not Leap year",n);
      }
 }
-
-
 //Note:
 //    Date -> LocalDate(C)
 //    Time -> LocalTime(C)
 //    Date & Time -> LocalDateTime(c)
 //
 //     now() --->Current information
-//       of()     --> user specific information
+//     of()     --> user specific information
 //
 //     ZoneId -> Setting up the particular zone to fetch the information
-//      ZondDateTime-> To get the Date and time information of any zone.
+//     ZondDateTime-> To get the Date and time information of any zone.
 //
 //      Period ---> To find difference b/w 2 date Objects
-//     Year    ---> To check whether the supplied year is leapYear or not.
+//      Year    ---> To check whether the supplied year is leapYear or not.
