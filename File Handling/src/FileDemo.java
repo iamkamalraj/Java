@@ -99,13 +99,13 @@ class FileDemo{
 //             |=> abc.txt
 //
 //Program:
-//import java.io.*;
-//class FileDemo{
-//      public static void main(String[] args)throws IOException{
-//            File f=new File("demo.txt");
-//            f.createNewFile();
-//      }
-//}
+import java.io.*;
+class FileDemo{
+     public static void main(String[] args)throws IOException{
+           File f=new File("demo.txt");
+           f.createNewFile();
+     }
+}
 //Requirement
 //=> Write code to create a directory named with IPLTeam in current working directory
 //and create a file named with abc.txt in that directory.
@@ -113,15 +113,15 @@ class FileDemo{
 //               |=> IPLTeam
 //                      |=> abc.txt
 //Program:
-//import java.io.*;
-//class FileDemo{
-//  public static void main(String[] args)throws IOException{
-//        File f1=new File("IPLTeam");
-//        f1.mkdir();
-//        File f2=new File("IPLTeam","abc.txt");
-//        f2.createNewFile();
-//    }
-//}
+import java.io.*;
+class FileDemo{
+ public static void main(String[] args)throws IOException{
+        File f1=new File("IPLTeam");
+       f1.mkdir();
+       File f2=new File("IPLTeam","abc.txt");
+       f2.createNewFile();
+   }
+}
 //
 //Requirement: Write code to create a file named with rcb.txt present in D:\IPLTeam
 //folder.
@@ -130,12 +130,12 @@ class FileDemo{
 //                        |-> rcb.txt
 //Program:
 //import java.io.*;
-//class FileDemo{
-//      public static void main(String[] args)throws IOException{
-//            File f=new File("D:\\IPLTeam","rcb.txt");
-//            f.createNewFile();
-//      }
-//}
+class FileDemo{
+     public static void main(String[] args)throws IOException{
+           File f=new File("D:\\IPLTeam","rcb.txt");
+           f.createNewFile();
+     }
+}
 //Assuming C:\\IPLTeam should be already available otherwise it would result in
 //"FileNotFoundException".
 //
