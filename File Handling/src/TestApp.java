@@ -209,19 +209,19 @@ public class TestApp {
 //
 //7. void close();
 //eg#1.
-//import java.io.FileReader;
-//import java.io.IOException;
-//
-//public class TestApp {
-//      public static void main(String[] args)throws IOException {
-//                  FileReader fr=new FileReader("abc.txt");
-//                  int i=fr.read();
-//                  while(i!=-1){
-//                        System.out.println((char)i);
-//                        i=fr.read();
-//                  }
-//      }
-//}
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TestApp {
+     public static void main(String[] args)throws IOException {
+                 FileReader fr=new FileReader("abc.txt");
+                 int i=fr.read();
+                 while(i!=-1){
+                       System.out.println((char)i);
+                       i=fr.read();
+                 }
+     }
+}
 //
 //eg#2. Reading an array of characters
 //
@@ -240,26 +240,26 @@ public class TestApp {
 //       int noOfCharactersCopied=fr.read(ch);
 //
 //
-//import java.io.FileReader;
-//import java.io.IOException;
-//import java.io.File;
-//
-//public class TestApp {
-//      public static void main(String[] args)throws IOException {
-//
-//                 File f=new File("abc.txt");
-//
-//                 FileReader fr=new FileReader(f);
-//                 char ch[] = new char[(int)f.length()];
-//
-//                 fr.read(ch);
-//
-//                 String data=new String(ch);
-//                 System.out.println(data);
-//
-//                 fr.close();
-//     }
-//}
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.File;
+
+public class TestApp {
+     public static void main(String[] args)throws IOException {
+
+                File f=new File("abc.txt");
+
+                FileReader fr=new FileReader(f);
+                char ch[] = new char[(int)f.length()];
+
+                fr.read(ch);
+
+                String data=new String(ch);
+                System.out.println(data);
+
+                fr.close();
+    }
+}
 //
 //Usage of FileWriter and FileReader is not recommended because of following reason
 //
