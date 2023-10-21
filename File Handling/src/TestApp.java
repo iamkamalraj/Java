@@ -495,32 +495,32 @@ class TestApp {
 //Requirement => file1.txt file2.txt copy one line from file1.txt and from file2.txt
 //to file3.txt.
 //
-//import java.io.*;
-//
-//class TestApp
-//{
-//      public static void main(String[] args)throws IOException
-//      {
-//           PrintWriter pw =new PrintWriter("file3.txt");
-//
-//           //copy from file1.txt to file3.txt
-//           BufferedReader br1=new BufferedReader(new FileReader("file1.txt"));
-//           BufferedReader br2=new BufferedReader(new FileReader("file2.txt"));
-//
-//           String line1= br1.readLine();
-//           String line2= br2.readLine();
-//
-//           while(line1!=null || line2!=null)
-//           {
-//                 if (line1!=null){
-//                       pw.println(line1);
-//                       line1= br1.readLine();
-//                 }
-//                 if(line2!=null){
-//                       pw.println(line2);
-//                       line2= br2.readLine();
-//                 }
-//           }
+import java.io.*;
+
+class TestApp
+{
+     public static void main(String[] args)throws IOException
+     {
+           PrintWriter pw =new PrintWriter("file3.txt");
+
+          //copy from file1.txt to file3.txt
+          BufferedReader br1=new BufferedReader(new FileReader("file1.txt"));
+          BufferedReader br2=new BufferedReader(new FileReader("file2.txt"));
+
+          String line1= br1.readLine();
+          String line2= br2.readLine();
+
+          while(line1!=null || line2!=null)
+          {
+                if (line1!=null){
+                      pw.println(line1);
+                      line1= br1.readLine();
+                }
+                if(line2!=null){
+                      pw.println(line2);
+                      line2= br2.readLine();
+                }
+          }
 //
 //           //closing the resources
 //           pw.flush();
@@ -536,94 +536,94 @@ class TestApp {
 //import java.io.*;
 //
 //class TestApp
-//{
-//      public static void main(String[] args)throws IOException
-//      {
-//            PrintWriter pw =new PrintWriter("output.txt");
-//
-//           //copy from file1.txt to file3.txt
-//           BufferedReader br1 =new BufferedReader(new FileReader("input.txt"));
-//           String line = br1.readLine();
-//
-//           BufferedReader br2 =null;
-//
-//           while(line!=null)
-//           {
-//                 boolean isAvailable = false;
-//                  br2=new BufferedReader(new FileReader("delete.txt"));
-//                 String target = br2.readLine();
-//
-//                 while(target!=null)
-//                 {
-//                       if(line.equals(target))
-//                       {
-//                             isAvailable = true;
-//                             break;
-//}
-//                         target = br2.readLine();
-//                    }
-//                    if (isAvailable==false)
-//                    {
-//                          pw.println(line);
-//                          pw.flush();//flush to ensure all data is written to the file
-//                    }
-//
-//                 line = br1.readLine();
-//           }
-//           //closing the resources
-//           br1.close();
-//           br2.close();
-//           pw.close();
-//
-//
-//       }
-//}
+{
+     public static void main(String[] args)throws IOException
+     {
+           PrintWriter pw =new PrintWriter("output.txt");
+
+          //copy from file1.txt to file3.txt
+          BufferedReader br1 =new BufferedReader(new FileReader("input.txt"));
+          String line = br1.readLine();
+
+          BufferedReader br2 =null;
+
+          while(line!=null)
+          {
+                boolean isAvailable = false;
+                 br2=new BufferedReader(new FileReader("delete.txt"));
+                String target = br2.readLine();
+
+                while(target!=null)
+                {
+                      if(line.equals(target))
+                      {
+                            isAvailable = true;
+                            break;
+}
+                        target = br2.readLine();
+                   }
+                   if (isAvailable==false)
+                   {
+                         pw.println(line);
+                         pw.flush();//flush to ensure all data is written to the file
+                   }
+
+                line = br1.readLine();
+          }
+          //closing the resources
+          br1.close();
+          br2.close();
+          pw.close();
+
+
+      }
+}
 //
 //Requirement => Write a program to remove duplicates from the file
 //
-//import java.io.*;
-//
-//class TestApp
-//{
-//      public static void main(String[] args)throws IOException
-//      {
-//            PrintWriter pw =new PrintWriter("output.txt");
-//
-//           //copy from file1.txt to file3.txt
-//           BufferedReader br1 =new BufferedReader(new FileReader("input.txt"));
-//           String line = br1.readLine();
-//
-//           BufferedReader br2 =null;
-//
-//           while(line!=null)
-//           {
-//                 boolean isAvailable =false;
-//                 br2 =new BufferedReader(new FileReader("output.txt"));
-//                 String target = br2.readLine();
-//
-//                    while(target!=null)
-//                    {
-//                          if (line.equals(target))
-//                          {
-//                                isAvailable = true;
-//                                break;
-//                          }
-//                          target = br2.readLine();
-//                    }
-//
-//                    if(isAvailable==false){
-//                          pw.println(line);
-//                          pw.flush();
-//                    }
-//
-//                    line = br1.readLine();
-//       }
-//        //closing the resources
-//        br1.close();
-//        br2.close();
-//        pw.close();
-//
-//
-//    }
+import java.io.*;
+
+class TestApp
+{
+     public static void main(String[] args)throws IOException
+     {
+           PrintWriter pw =new PrintWriter("output.txt");
+
+          //copy from file1.txt to file3.txt
+          BufferedReader br1 =new BufferedReader(new FileReader("input.txt"));
+          String line = br1.readLine();
+
+          BufferedReader br2 =null;
+
+          while(line!=null)
+          {
+                boolean isAvailable =false;
+                br2 =new BufferedReader(new FileReader("output.txt"));
+                String target = br2.readLine();
+
+                   while(target!=null)
+                   {
+                         if (line.equals(target))
+                         {
+                               isAvailable = true;
+                               break;
+                         }
+                         target = br2.readLine();
+                   }
+
+                   if(isAvailable==false){
+                         pw.println(line);
+                         pw.flush();
+                   }
+
+                   line = br1.readLine();
+      }
+       //closing the resources
+       br1.close();
+       br2.close();
+       pw.close();
+
+
+   }
 //}
 //
