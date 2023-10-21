@@ -15,16 +15,16 @@
 //creates a java File object represents name of the file.
 //
 //Example:
-//import java.io.*;
-//class FileDemo{
-//      public static void main(String[] args)throws IOException{
-//            File f=new File("abc.txt");
-//            System.out.println(f.exists());//false
-//
-//           f.createNewFile();
-//           System.out.println(f.exists());//true
-//      }
-//}
+import java.io.*;
+class FileDemo{
+     public static void main(String[] args)throws IOException{
+           File f=new File("abc.txt");
+           System.out.println(f.exists());//false
+
+          f.createNewFile();
+          System.out.println(f.exists());//true
+     }
+}
 //1st run
 //=======
 //false
