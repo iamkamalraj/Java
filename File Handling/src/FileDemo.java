@@ -37,18 +37,18 @@ class FileDemo{
 //
 //=> A java File object can represent a directory also.
 //Example:
-//import   java.io.File;
-//import   java.io.IOException;
-//
-//class FileDemo{
-//  public static void main(String[] args)throws IOException{
-//      File f=new File("cricket123");
-//      System.out.println(f.exists());//false
-//
-//     f.mkdir();//Creates a new directory
-//     System.out.println(f.exists());//true
-//  }
-//}
+import   java.io.File;
+import   java.io.IOException;
+
+class FileDemo{
+ public static void main(String[] args)throws IOException{
+     File f=new File("cricket123");
+     System.out.println(f.exists());//false
+
+    f.mkdir();//Creates a new directory
+    System.out.println(f.exists());//true
+ }
+}
 //1st run
 //=======
 //false
