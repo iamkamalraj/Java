@@ -56,18 +56,18 @@
 //import java.io.File;
 //import java.io.IOException;
 //
-//public class TestApp {
-//      public static void main(String[] args)throws IOException {
-//            File f=new File("D:\EnterpriseJava");
-//            String[] s= f.list();
-//            int count=0;
-//            for(String s1:s){
-//                  count++;
-//                  System.out.println(s1);
-//            }
-//            System.out.println("The no of files are :: "+count);
-//      }
-//}
+public class TestApp {
+     public static void main(String[] args)throws IOException {
+           File f=new File("D:\EnterpriseJava");
+           String[] s= f.list();
+           int count=0;
+           for(String s1:s){
+                 count++;
+                 System.out.println(s1);
+           }
+           System.out.println("The no of files are :: "+count);
+     }
+}
 //
 //Requirement: Write a program to display only file names.
 //
