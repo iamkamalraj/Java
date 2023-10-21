@@ -314,28 +314,28 @@ public class TestApp {
 //4. Inserting newline character.
 //Answer: 4(newLine())
 //
-//import java.io.*;
-//class TestApp
-//{
-//      public static void main(String[] args)throws IOException
-//      {
-//            BufferedWriter bw = new BufferedWriter(new FileWriter("abc.txt"));
-//            bw.write(73);
-//            bw.write("neuron");
-//            bw.newLine();
-//            bw.write("technology");
-//            bw.newLine();
-//           char ch[] = {'a','b','c'};
-//           bw.write(ch);
-//
-//
-//           bw.flush();
-//
-//           bw.close();
-//
-//     }
-//}
-//
+import java.io.*;
+class TestApp
+{
+     public static void main(String[] args)throws IOException
+     {
+           BufferedWriter bw = new BufferedWriter(new FileWriter("abc.txt"));
+           bw.write(73);
+           bw.write("neuron");
+           bw.newLine();
+           bw.write("technology");
+           bw.newLine();
+           char ch[] = {'a','b','c'};
+          bw.write(ch);
+
+
+          bw.flush();
+
+          bw.close();
+
+    }
+}
+
 //Note
 //1.bw.close()// recomended to use
 //2.fw.close()// not recomended to use
@@ -369,22 +369,22 @@ public class TestApp {
 //
 //eg#1.Read the data from the file called "abc.txt"
 //
-//import java.io.FileReader;
-//import java.io.IOException;
-//import java.io.BufferedReader;
-//public class TestApp {
-//      public static void main(String[] args)throws IOException {
-//
-//                 FileReader fr=new FileReader("abc.txt");
-//                 BufferedReader br=new BufferedReader(fr);
-//                 String line= br.readLine();
-//                 while(line!=null){
-//                       System.out.println(data);
-//                       line=br.readLine();
-//                 }
-//                 br.close();
-//      }
-//}
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
+public class TestApp {
+     public static void main(String[] args)throws IOException {
+
+                FileReader fr=new FileReader("abc.txt");
+                BufferedReader br=new BufferedReader(fr);
+                String line= br.readLine();
+                while(line!=null){
+                      System.out.println(data);
+                      line=br.readLine();
+                }
+                br.close();
+     }
+}
 //Note:
 //1.br.close()// recomended to use
 //2.fw.close()// not recomended to use
@@ -462,36 +462,36 @@ public class TestApp {
 //
 //Requirement => file1.txt ,file2.txt copy all the contents to file3.txt
 //
-//import java.io.*;
-//class TestApp {
-//      public static void main(String[] args)throws IOException {
-//            PrintWriter pw =new PrintWriter("file3.txt");
-//
-//            //copy from file1.txt to file3.txt
-//            BufferedReader br=new BufferedReader(new FileReader("file1.txt"));
-//            String line = br.readLine();
-//            while(line!=null){
-//                  pw.println(line);
-//                  line = br.readLine();
-//            }
-//
-//            //copy from file2.txt to file3.txt
-//            br=new BufferedReader(new FileReader("file2.txt"));
-//            line = br.readLine();
-//            while(line!=null){
-//                  pw.println(line);
-//                  line = br.readLine();
-//            }
-//
-//            //closing the resources
-//            pw.flush();
-//            br.close();
-//            pw.close();
-//
-//
-//      }
-//}
-//
+import java.io.*;
+class TestApp {
+     public static void main(String[] args)throws IOException {
+           PrintWriter pw =new PrintWriter("file3.txt");
+
+           //copy from file1.txt to file3.txt
+           BufferedReader br=new BufferedReader(new FileReader("file1.txt"));
+           String line = br.readLine();
+           while(line!=null){
+                 pw.println(line);
+                 line = br.readLine();
+           }
+
+           //copy from file2.txt to file3.txt
+           br=new BufferedReader(new FileReader("file2.txt"));
+           line = br.readLine();
+           while(line!=null){
+                 pw.println(line);
+                 line = br.readLine();
+           }
+
+           //closing the resources
+           pw.flush();
+           br.close();
+           pw.close();
+
+
+     }
+}
+
 //Requirement => file1.txt file2.txt copy one line from file1.txt and from file2.txt
 //to file3.txt.
 //
