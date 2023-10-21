@@ -53,9 +53,9 @@
 //present
 //           in D:\EnterpriseJava
 //
-//import java.io.File;
-//import java.io.IOException;
-//
+import java.io.File;
+import java.io.IOException;
+
 public class TestApp {
      public static void main(String[] args)throws IOException {
            File f=new File("D:\EnterpriseJava");
@@ -71,26 +71,26 @@ public class TestApp {
 //
 //Requirement: Write a program to display only file names.
 //
-//import java.io.File;
-//import java.io.IOException;
-//
-//public class TestApp {
-//      public static void main(String[] args)throws IOException {
-//
-//           File f=new File("D:\EnterpriseJava");
-//           String[] s= f.list();
-//           int count=0;
-//
-//           for(String s1:s){
-//                 File f1=new File(f,s1);
-//                 if (f1.isFile()){
-//                       count++;
-//                       System.out.println(s1);
-//                 }
-//           }
-//           System.out.println("The no of Directories are :: "+count);
-//     }
-//}
+import java.io.File;
+import java.io.IOException;
+
+public class TestApp {
+     public static void main(String[] args)throws IOException {
+
+          File f=new File("D:\EnterpriseJava");
+          String[] s= f.list();
+          int count=0;
+
+          for(String s1:s){
+                File f1=new File(f,s1);
+                if (f1.isFile()){
+                      count++;
+                      System.out.println(s1);
+                }
+          }
+          System.out.println("The no of Directories are :: "+count);
+    }
+}
 //
 //Requirement: Write a program to display only directory names
 //import java.io.File;
