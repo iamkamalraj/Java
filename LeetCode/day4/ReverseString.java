@@ -15,19 +15,19 @@ public class ReverseString {
             right--;
         }
     }
-
-    public static void main(String[] args) {
-        ReverseString reverseString = new ReverseString();
-
-        // Example 1
-        char[] input1 = {'h', 'e', 'l', 'l', 'o'};
-        reverseString.reverseString(input1);
-        System.out.println("Reversed string for input 1: " + Arrays.toString(input1));
-
-        // Example 2
-        char[] input2 = {'H', 'a', 'n', 'n', 'a', 'h'};
-        reverseString.reverseString(input2);
-        System.out.println("Reversed string for input 2: " + Arrays.toString(input2));
-    }
 }
+//     public static void main(String[] args) {
+//         ReverseString reverseString = new ReverseString();
+
+//         // Example 1
+//         char[] input1 = {'h', 'e', 'l', 'l', 'o'};
+//         reverseString.reverseString(input1);
+//         System.out.println("Reversed string for input 1: " + Arrays.toString(input1));
+
+//         // Example 2
+//         char[] input2 = {'H', 'a', 'n', 'n', 'a', 'h'};
+//         reverseString.reverseString(input2);
+//         System.out.println("Reversed string for input 2: " + Arrays.toString(input2));
+//     }
+// }
 
