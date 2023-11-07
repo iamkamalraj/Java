@@ -49,4 +49,34 @@ class Solution {
     }
 }
 
+// public class Fibonacci {
+//     public static int calculateFibonacci(int n) {
+//         if (n <= 1) {
+//             return n;
+//         }
+
+//         int previous = 0;
+//         int current = 1;
+//         int next = 0;
+
+//         for (int i = 2; i <= n; i++) {
+//             next = previous + current;
+//             previous = current;
+//             current = next;
+//         }
+
+//         return next;
+//     }
+
+//     public static void main(String[] args) {
+//         int n = 10; // You can change this value to calculate F(n) for a different 'n'
+//         if (n >= 0 && n <= 30) {
+//             int result = calculateFibonacci(n);
+//             System.out.println("F(" + n + ") = " + result);
+//         } else {
+//             System.out.println("Please enter a value of 'n' within the range of 0 to 30.");
+//         }
+//     }
+// }
+
 
