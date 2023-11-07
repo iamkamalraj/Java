@@ -48,3 +48,30 @@ class NumArray {
 	        return cumSum[right + 1] - cumSum[left];
 	    }
 	}
+
+// class NumArray {
+//     private int[] cumSum;
+
+//     public NumArray(int[] nums) {
+//         cumSum = new int[nums.length + 1];
+//         for (int i = 0; i < nums.length; i++) {
+//             cumSum[i + 1] = cumSum[i] + nums[i];
+//         }
+//     }
+
+//     public int sumRange(int left, int right) {
+//         return cumSum[right + 1] - cumSum[left];
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         int[] arr = {-2, 0, 3, -5, 2, -1};
+//         NumArray numArray = new NumArray(arr);
+
+//         System.out.println(numArray.sumRange(0, 2)); // Output: 1
+//         System.out.println(numArray.sumRange(2, 5)); // Output: -1
+//         System.out.println(numArray.sumRange(0, 5)); // Output: -3
+//     }
+// }
+
