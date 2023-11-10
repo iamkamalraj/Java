@@ -32,22 +32,22 @@ package day10;
 //Follow up: Recursive solution is trivial, could you do it iteratively?
 
 
-//class Solution {
-//    private List<Integer> res = new ArrayList<>();
-//    public List<Integer> inorderTraversal(TreeNode root) {
-//        traverse(root);
-//        return res;
-//    }
-//    
-//    private void traverse(TreeNode root) {
-//        if (root == null) {
-//            return;
-//        }
-//        traverse(root.left);
-//        res.add(root.val);
-//        traverse(root.right);
-//    }
-//}
+class Solution {
+   private List<Integer> res = new ArrayList<>();
+   public List<Integer> inorderTraversal(TreeNode root) {
+       traverse(root);
+       return res;
+   }
+   
+   private void traverse(TreeNode root) {
+       if (root == null) {
+           return;
+       }
+       traverse(root.left);
+       res.add(root.val);
+       traverse(root.right);
+   }
+}
 
 
 //https://youtu.be/6wxNc8gCj8E
