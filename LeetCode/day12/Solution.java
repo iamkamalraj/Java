@@ -40,6 +40,7 @@ package day12;
  *     }
  * }
  */
+
 //Recursive:
 //public class Solution {
 //
@@ -106,5 +107,3 @@ package day12;
 //boolean isSymmetric = solution.isSymmetric(root);
 //
 //System.out.println(isSymmetric); // true
-
-
