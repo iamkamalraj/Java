@@ -100,3 +100,41 @@ public class CeaserCipher {
 	}
 }
 
+//test2
+package test;
+
+import java.util.*;
+
+public class Solution {
+
+	public static String encrypt(String text, int shift) {
+		StringBuilder encrypt = new StringBuilder();
+		for (int i = 0; i < text.length(); i++) {
+			char currentChar = text.charAt(i);
+			if (Character.isLetter(currentChar)) {
+				char enceyptdChar = (char) ((currentChar + shift - 'a') % 23 + 'a');
+				encrypt.append(enceyptdChar);
+			} else {
+				encrypt.append(currentChar);
+			}
+		}
+		return encrypt.toString();
+
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter Text: ");
+		String text = sc.nextLine().toLowerCase();
+
+		System.out.println("Enter Shift Value: ");
+		int shift = sc.nextInt();
+		
+		String encryptedText = encrypt(text, shift);
+		System.out.println("encryptedText: "+encryptedText);
+
+		sc.close();
+	}
+}
+
