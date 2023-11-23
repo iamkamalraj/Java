@@ -31,3 +31,72 @@ public class CaesarCipher {
         scanner.close();
     }
 }
+
+//Test
+package test;
+//
+//1
+//import java.util.*;
+//
+//public class CeaserCipher {
+//	public static String encrypt(String text, int shift) {
+//		StringBuilder encrypt = new StringBuilder();
+//		for (int i = 0; i < text.length(); i++) {
+//			char currentChar = text.charAt(i);
+//			if (Character.isLetter(currentChar)) {
+//				char encryptedChar = (char) ((currentChar + shift - 'a') % 26 + 'a');
+//
+//				encrypt.append(encryptedChar);
+//			} else {
+//				encrypt.append(currentChar);
+//			}
+//		}
+//		return encrypt.toString();
+//	}
+//
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.println("Enter the Texr : ");
+//		String text = sc.nextLine().toLowerCase();
+//		
+//		System.out.println("Enter the shift : ");
+//		int shift = sc.nextInt();
+//		
+//		String encryptedText = encrypt(text, shift);
+//		System.out.println("encryptedText : "+ encryptedText);
+//	}
+//
+//}
+
+import java.util.*;
+
+public class CeaserCipher {
+	public static String encrypt(String text, int shift) {
+		StringBuilder encrypt = new StringBuilder();
+		for (int i = 0; i < text.length(); i++) {
+			char currentChar = text.charAt(i);
+			if (Character.isLetter(currentChar)) {
+				char encryption = (char) ((currentChar + shift - 'a') % 26 + 'a');
+				encrypt.append(encryption);
+			} else {
+				encrypt.append(currentChar);
+			}
+		}
+		return encrypt.toString();
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the Text : ");
+		String text = sc.nextLine().toLowerCase();
+
+		System.out.println("Enter the shift : ");
+		int shift = sc.nextInt();
+
+		String encryptedText = encrypt(text, shift);
+		System.out.println("Encrypted text : " + encryptedText);
+	}
+}
+
