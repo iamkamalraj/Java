@@ -30,6 +30,7 @@ package day26;
 //s[i] is either '(' or ')'.
 
 
+
 class Solution {
     public int minAddToMakeValid(String s) {
         int f = 0;
@@ -51,3 +52,14 @@ class Solution {
         return f;
     }
 }
+
+
+// Here's a step-by-step explanation:
+
+// f is the final count representing the minimum number of additions needed.
+// t is a temporary count of open parentheses. It starts at 0.
+// The code iterates through each character in the input string s.
+// If the character is '(', it checks if there are any temporary open parentheses (t > 0). If so, it adds the absolute value of t to f and resets t to 0. Then, it decrements t.
+// If the character is ')', it increments t.
+// After the loop, any remaining temporary open parentheses are added to f.
+// The final count f is returned.
