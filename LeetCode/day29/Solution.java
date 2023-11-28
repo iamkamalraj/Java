@@ -30,7 +30,7 @@ package day29;
 //2 <= n <= 105
 //0 <= height[i] <= 104
 
-
+//Runtime 5ms
 class Solution {
     public int maxArea(int[] height) {
         int left = 0;
@@ -49,5 +49,33 @@ class Solution {
             }
         }
         return max;
+    }
+}
+
+//Runtime 4ms
+class Solution {
+    public int maxArea(int[] height) {
+        // max y of two points
+        // max x diff of two points
+
+        int i = 0;
+        int j = height.length - 1;
+
+        int maxArea = -1;
+        
+        while (i < j) {
+            int leftBar = height[i];
+            int rightBar = height[j];
+
+            int area = Math.min(leftBar, rightBar) * (j - i);
+            maxArea = Math.max(area, maxArea);
+
+            if (leftBar > rightBar) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return maxArea;
     }
 }
