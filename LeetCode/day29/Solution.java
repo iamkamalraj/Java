@@ -79,3 +79,27 @@ class Solution {
         return maxArea;
     }
 }
+
+//Runtime 3ms
+class Solution {
+    public int maxArea(int[] height) {
+        int max = 0;
+        int leftPointer = 0;
+        int rightPointer = height.length - 1;
+
+        while (leftPointer <= rightPointer) {
+            int temp = 0;
+            if (height[leftPointer] < height[rightPointer]) {
+                temp = height[leftPointer] * (rightPointer - leftPointer);
+                leftPointer++;
+            } else {
+                temp = height[rightPointer] * (rightPointer - leftPointer);
+                rightPointer--;
+            }
+            if (temp > max) {
+                max = temp;
+            }
+        }
+        return max;
+    }
+}
