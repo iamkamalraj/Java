@@ -117,3 +117,25 @@ class Solution {
         return area;
     }
 }
+
+//Runtime 1ms
+class Solution {
+    public int maxArea(int[] height) {
+       int maxArea=0;
+        int x1 = 0, x2 = height.length - 1;
+        int h = -1; // the max height recorded so far. We haven't computed anything, so let's guess it's -1.
+        // we validate that x2 > x1 that BOTH new height are higher than the previous minimum height calculated. 
+        while((height[x1] >= h && height[x2] >= h) && x2>x1) {
+            // we find an higher height, let calcute the new min height, and replace the surface area if necessary.
+            h = Math.min(height[x1], height[x2]);
+            int newArea = (x2-x1) * h;
+            if(maxArea < newArea) maxArea = newArea;
+
+            // Now that we have evaluated that a new surface area exist, we need to find a new minimum height by moving x1 and x2 to an height that is higher than the previous one.
+            while(height[x1] <= h && x2 > x1) x1++;
+            // we move the offset until the next left hand maxValuePossible.
+            while(height[x2] <= h && x2 > x1) x2--;
+        }
+        return maxArea;
+    }  
+}
