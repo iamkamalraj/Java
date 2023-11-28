@@ -103,3 +103,17 @@ class Solution {
         return max;
     }
 }
+
+//Runtime 2ms
+class Solution {
+    public int maxArea(int[] height) {
+        int i = 0, j = height.length - 1, area = 0, minHeight;
+        while(i < j){
+            minHeight = Math.min(height[i], height[j]);
+            area = Math.max(area, minHeight * (j - i));
+            while(i < j && height[i] <= minHeight) i++;
+            while(i < j && height[j] <= minHeight) j--;
+        }
+        return area;
+    }
+}
