@@ -26,6 +26,11 @@ package day33;
 //1 <= n <= 20
 //-1000 <= matrix[i][j] <= 1000
 
+The rotate method starts by initializing the variable n to the length of the matrix, assuming it's a square matrix (number of rows = number of columns).
+It then iterates over each column j from 0 to n-1, and for each column, it reverses the elements in that column. This is done by calling the reverse method, passing the start and end indices of the column to be reversed.
+After reversing the columns, it iterates over each diagonal line of the matrix and swaps the elements along the diagonal. This is done by calling the diagonal method, passing the indices of the diagonal elements to be swapped.
+Finally, the rotation process is completed, and the matrix is rotated by 90 degrees clockwise.
+
 class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
@@ -77,3 +82,4 @@ class Solution {
         matrix[i2][j2] = temp;
     }
 }
+
