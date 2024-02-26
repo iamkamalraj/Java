@@ -31,6 +31,8 @@ It then iterates over each column j from 0 to n-1, and for each column, it rever
 After reversing the columns, it iterates over each diagonal line of the matrix and swaps the elements along the diagonal. This is done by calling the diagonal method, passing the indices of the diagonal elements to be swapped.
 Finally, the rotation process is completed, and the matrix is rotated by 90 degrees clockwise.
 
+The reverse, diagonal, and swap methods are helper methods used within the rotate method to perform specific tasks such as reversing elements in a column, swapping elements, and rotating the diagonal elements.
+
 class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
